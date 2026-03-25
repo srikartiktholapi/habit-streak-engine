@@ -9,11 +9,11 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pydantic import BaseModel as PydanticBase
 from typing import List
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 from groq import Groq
 
-load_dotenv()
+# load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
